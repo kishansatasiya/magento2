@@ -589,7 +589,7 @@ define([
             var options, tierPriceHtml;
 
             if (typeof optionId != 'undefined' &&
-                this.options.spConfig.optionPrices[optionId].tierPrices != [] // eslint-disable-line eqeqeq
+                this.options.spConfig.optionPrices[optionId].tierPrices.length > 0 
             ) {
                 options = this.options.spConfig.optionPrices[optionId];
 
